@@ -1,5 +1,3 @@
-
-
 def fibonacci(quantidade, sequencia=(0, 1)):
     # Importante: condição de parada
     return sequencia if len(sequencia) == quantidade else \
