@@ -9,8 +9,8 @@ def filtrar_atributos(informados, suportados):
 
 def tag_bloco(conteudo, *args, classe='success', inline=False, **novos_atrs):
     tag = 'span' if inline else 'div'
-    html = conteudo if not callable(conteudo)
-    else conteudo(*args, **novos_atrs)
+    html = conteudo if not callable(conteudo) else conteudo(*args,
+                                                            **novos_atrs)
     atributos = filtrar_atributos(novos_atrs, bloco_atributos)
     return(f'<{tag} {atributos} class="{classe}"> {html}</{tag}>')
 

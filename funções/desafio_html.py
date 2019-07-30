@@ -3,7 +3,7 @@ def tag(tag, *args, **kwargs):
         kwargs['class'] = kwargs.pop('html_class')
     attrs = ' '.join(f'{k}="{v}" ' for k, v in kwargs.items())
     inner = ''.join(args)
-    return f'<{tag} {attrs}>{inner</{tag}>}'
+    return f'<{tag} {attrs}> {inner} </{tag}>'
 
 
 if __name__ == '__main__':
