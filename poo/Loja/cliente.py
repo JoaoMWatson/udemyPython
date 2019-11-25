@@ -1,5 +1,5 @@
 from .pessoa import Pessoa
-import datetime
+from functools import reduce
 
 class Cliente(Pessoa):
     def __init__(self, nome, idade):
@@ -10,4 +10,7 @@ class Cliente(Pessoa):
         self.compras.append(compra)
 
     def get_data_ultima_compra(self):
-        self.compras[-1]
+        return "Lista vasia" if not self.compras else sorted(self.compras, key=lambda compra: compra.data)[-1].data
+
+    def total_compra(self):
+        return reduce(lambda c1, c2 :c1 + c2, (compra.valor for compra in self.compras))
