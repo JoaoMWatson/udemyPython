@@ -51,7 +51,7 @@ nbconvert==5.6.1
 nbformat==4.4.0
 nemo-emblems==4.4.0
 netifaces==0.10.4
-notebook==6.0.2
+notebook==6.1.5
 numpy==1.17.3
 odfpy==1.4.0
 onboard==1.4.1
