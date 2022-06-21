@@ -52,7 +52,7 @@ nbformat==4.4.0
 nemo-emblems==4.4.0
 netifaces==0.10.4
 notebook==6.0.2
-numpy==1.17.3
+numpy==1.22.0
 odfpy==1.4.0
 onboard==1.4.1
 PAM==0.4.2
